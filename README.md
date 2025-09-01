@@ -69,7 +69,7 @@ A aplicação está hospedada na Vercel e pode ser acessada através do link:
 
 ---
 
-### 👨Autor
+### Autor
 
 - **[Rafael Henrique da Luz](https://github.com/rafaelhluz)**
 
