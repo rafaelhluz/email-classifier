@@ -3,8 +3,7 @@ uvicorn==0.30.0
 python-multipart==0.0.9
 python-dotenv==1.0.1
 pdfplumber==0.10.3
-openai==1.44.0
 jinja2==3.1.4
 pydantic==2.8.2
 gunicorn
-google-generativeai
+google-generativeai==0.6.1
