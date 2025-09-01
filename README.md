@@ -1,17 +1,6 @@
 # 📧 Classificador de E-mails com IA
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/seu-usuario/seu-repositorio)
-![GitHub top language](https://img.shields.io/github/languages/top/seu-usuario/seu-repositorio)
-
 > Uma solução de Inteligência Artificial para classificar e-mails de clientes como "Produtivos" ou "Improdutivos" e gerar respostas inteligentes e contextualizadas.
-
----
-
-### Demonstração
-
-Assista ao vídeo demonstrativo completo no YouTube para ver a aplicação em ação:
-
-[Link para o seu vídeo no YouTube](link-do-seu-video-aqui)
 
 ---
 
