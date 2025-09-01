@@ -33,7 +33,7 @@ Para testar o projeto na sua máquina, siga os passos abaixo:
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
+    git clone [https://github.com/rafaelhluz/email-classifier.git](https://github.com/rafaelhluz/email-classifier.git)
     cd seu-repositorio
     ```
 2.  **Crie e ative um ambiente virtual:**
@@ -65,13 +65,13 @@ Para testar o projeto na sua máquina, siga os passos abaixo:
 
 A aplicação está hospedada na Vercel e pode ser acessada através do link:
 
-[Link da sua aplicação na Vercel](https://seu-projeto.vercel.app/)
+[Link da sua aplicação na Vercel](https://email-classifier-nine.vercel.app/)
 
 ---
 
 ### 👨Autor
 
-- **[Seu Nome Completo](https://github.com/seu-usuario)**
+- **[Rafael Henrique da Luz](https://github.com/rafaelhluz)**
 
 ---
 
