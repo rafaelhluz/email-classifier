@@ -1,0 +1,207 @@
+/* --- Reset --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- Paleta --- */
+:root {
+  --bg-dark: #0f1115;
+  --card-dark: #1a1c22;
+  --text-light: #f5f5f5;
+  --green-accent: #00e676;
+  --green-dark: #00a152;
+  --yellow-accent: #ffeb3b;
+  --border-color: #333;
+  --shadow-color: rgba(0, 0, 0, 0.4);
+}
+
+/* --- Base --- */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--bg-dark);
+  color: var(--text-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* --- Container --- */
+.container {
+  width: 100%;
+  max-width: 700px;
+  background: var(--card-dark);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--border-color);
+  animation: fadeIn 0.6s ease;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 30px;
+  letter-spacing: -0.5px;
+}
+
+/* --- Form --- */
+.form-group {
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+textarea,
+input[type="file"] {
+  width: 100%;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background: var(--card-dark);
+  color: var(--text-light);
+  font-size: 15px;
+  resize: vertical;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+textarea:focus {
+  border-color: var(--green-accent);
+  box-shadow: 0 0 0 3px rgba(0, 230, 118, 0.2);
+  outline: none;
+}
+
+/* --- Upload Customizado --- */
+.file-upload {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+}
+
+.file-upload input[type="file"] {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.file-upload span {
+  display: block;
+  padding: 15px;
+  background: #2a2d35;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  text-align: center;
+  color: #ccc;
+  transition: background 0.3s, color 0.3s;
+}
+
+.file-upload:hover span {
+  background: #33363f;
+  color: var(--text-light);
+}
+
+/* --- Botão --- */
+button {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(45deg, var(--green-accent), var(--green-dark));
+  color: var(--text-light);
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 230, 118, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 230, 118, 0.6);
+}
+
+/* --- Loading --- */
+.loading {
+  display: none;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+.spinner {
+  border: 5px solid rgba(255, 255, 255, 0.1);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border-top-color: var(--green-accent);
+  animation: spin 1s ease-in-out infinite;
+  margin: 0 auto 15px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* --- Resultado --- */
+.result {
+  margin-top: 40px;
+  padding: 25px;
+  border-radius: 12px;
+  display: none;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  border: 2px solid;
+  background: var(--card-dark);
+  color: var(--text-light); /* Texto principal branco */
+}
+
+.result.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Produtivo (borda/título verde) */
+.productive {
+  border-color: var(--green-accent);
+}
+.productive h3 {
+  color: var(--green-accent);
+}
+
+/* Não-produtivo (borda/título amarelo) */
+.unproductive {
+  border-color: var(--yellow-accent);
+}
+.unproductive h3 {
+  color: var(--yellow-accent);
+}
+
+/* Destaques em verde */
+.result strong {
+  color: var(--green-accent);
+}
+
+/* Parágrafos ficam em branco */
+.result p {
+  color: var(--text-light);
+}
+
+/* --- Animação Container --- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
