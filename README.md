@@ -1,4 +1,4 @@
-# 📧 Classificador de E-mails com IA
+# Classificador de E-mails com IA
 
 > Uma solução de Inteligência Artificial para classificar e-mails de clientes como "Produtivos" ou "Improdutivos" e gerar respostas inteligentes e contextualizadas.
 
